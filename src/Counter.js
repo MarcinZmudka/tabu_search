@@ -18,7 +18,7 @@ class Counter {
     solution_nodes.map((node, index, array) => {
       if (node == move.get_lower()) {
         new_nodes.push(move.get_higher());
-      } else if ((node == move.get_higher())) {
+      } else if (node == move.get_higher()) {
         new_nodes.push(move.get_lower());
       } else {
         new_nodes.push(array[index]);

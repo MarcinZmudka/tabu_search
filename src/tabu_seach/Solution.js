@@ -22,20 +22,20 @@ class Solution {
       );
     }
   }
-  get_nodes(){
-      return this.nodes;
+  get_nodes() {
+    return this.nodes;
   }
-  set_nodes(nodes){
-      this.nodes = nodes;
+  set_nodes(nodes) {
+    this.nodes = nodes;
   }
-  get_value(){
-      if(this.value == 0){
-          console.log("wartośc nie ustawiona");
-      }
-      return this.value;
+  get_value() {
+    if (this.value == 0) {
+      console.log("wartośc nie ustawiona");
+    }
+    return this.value;
   }
-  set_value(value){
-      this.value = value;
+  set_value(value) {
+    this.value = value;
   }
 }
 export default Solution;

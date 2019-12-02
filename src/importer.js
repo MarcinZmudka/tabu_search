@@ -11,10 +11,10 @@ function importer(name) {
         array.flat(Infinity);
         const new_array = array.filter(value => value != "");
         const newer_array = new_array.map(value => parseInt(value));
-        const another_array = newer_array.filter(value =>  !Number.isNaN(value));
+        const another_array = newer_array.filter(value => !Number.isNaN(value));
         nodes.push(another_array);
       }
-    });    
+    });
   } catch (err) {
     console.error(err.message);
   }
