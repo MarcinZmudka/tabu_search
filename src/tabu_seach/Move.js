@@ -14,10 +14,10 @@ class Move{
         }
     }
     reduce(){ // funckja zmniejszająca ilość ruchów przez, które obiekt zostaje w tabu liśćie
-        this.cadention--;
+        this.tabu--;
     }
     set_tabu(number){ // funckja ustawiająca kandencje
-        this.cadention = number;
+        this.tabu = number;
     }
     get_tabu(){
         return this.tabu;
@@ -36,6 +36,9 @@ class Move{
     }
     set_value(value){
     this.value = value;
+    }
+    get_value(){
+        return this.value;
     }
 }
 export default Move;

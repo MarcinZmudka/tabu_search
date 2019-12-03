@@ -11,7 +11,7 @@ class Neighborhood {
   }
   generate_neighborhood(solution) {
     this.done_moves = []; //czyścimy wykonane ruchy
-    for (let i = 0; i < nodes.length; i++) {
+    for (let i = 0; i < this.nodes.length; i++) {
       this.done_moves.push([]);
     }
     solution.get_nodes().map((value, index, array) => {
